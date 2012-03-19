@@ -1,0 +1,632 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY prop "http://escidoc.de/core/01/properties/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY srel "http://escidoc.de/core/01/structural-relations/" >
+]>
+
+
+<rdf:RDF xmlns="http://escidoc.de/core/01/properties/"
+     xml:base="http://escidoc.de/core/01/properties/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:srel="http://escidoc.de/core/01/structural-relations/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prop="http://escidoc.de/core/01/properties/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://escidoc.de/core/01/properties/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="&xsd;date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/assigned-on -->
+
+    <owl:ObjectProperty rdf:about="&srel;assigned-on">
+        <rdfs:comment>
+                Refers to the entity/resource for that a role is granted to a user.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/child -->
+
+    <owl:ObjectProperty rdf:about="&srel;child">
+        <rdfs:comment>
+                Refers to the entity/resource that is a child of a resource.
+                The inverse of http://escidoc.de/core/01/structural-relations/parent.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/component -->
+
+    <owl:ObjectProperty rdf:about="&srel;component">
+        <rdfs:comment>
+                Refers to a Component of a Item.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/container -->
+
+    <owl:ObjectProperty rdf:about="&srel;container">
+        <rdfs:comment>
+                Refers to an container that is a member of a resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/content-model -->
+
+    <owl:ObjectProperty rdf:about="&srel;content-model">
+        <rdfs:comment>
+                Refers to the resource describing the content model of a
+                resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/context -->
+
+    <owl:ObjectProperty rdf:about="&srel;context">
+        <rdfs:comment>
+                Refers to the context of a resource. A context describes
+                conditions of accessing, manipulating and behavior of a
+                resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/created-by -->
+
+    <owl:ObjectProperty rdf:about="&srel;created-by">
+        <rdfs:comment>
+                Refers to the entity/resource/person that created the
+                raw source of a resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/granted-to -->
+
+    <owl:ObjectProperty rdf:about="&srel;granted-to">
+        <rdfs:comment>
+                Refers to a resource/entity/person (e.g. a user or group) a
+                resource assigns previleges on.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/item -->
+
+    <owl:ObjectProperty rdf:about="&srel;item">
+        <rdfs:comment>
+                Refers to an item that is a member of a resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/lock-owner -->
+
+    <owl:ObjectProperty rdf:about="&srel;lock-owner">
+        <rdfs:comment>
+                Refers to the entity/resource/person that locked a
+                resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/member -->
+
+    <owl:ObjectProperty rdf:about="&srel;member">
+        <rdfs:comment>
+                Refers to an entity/resource that is a member of a resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/modified-by -->
+
+    <owl:ObjectProperty rdf:about="&srel;modified-by">
+        <rdfs:comment>
+                Refers to the entity/resource/person that created the
+                version of the raw source of a resource which is the
+                source the current representation is derived from.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/organizational-unit -->
+
+    <owl:ObjectProperty rdf:about="&srel;organizational-unit">
+        <rdfs:comment>
+                Refers to an organizational unit a resource is related to.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/origin -->
+
+    <owl:ObjectProperty rdf:about="&srel;origin">
+        <rdfs:comment>
+                Refers to the entity/resource a resource is a surrogate of.
+                Cf. eSciDoc &quot;Surrogate Item&quot;.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/parent -->
+
+    <owl:ObjectProperty rdf:about="&srel;parent">
+        <rdfs:comment>
+                Refers to an entity/resource that is a parent of a resource.
+                The inverse of http://escidoc.de/core/01/structural-relations/child.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/person -->
+
+    <owl:ObjectProperty rdf:about="&srel;person">
+        <rdfs:comment>
+                Refers to the related person of a resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/predecessor -->
+
+    <owl:ObjectProperty rdf:about="&srel;predecessor">
+        <rdfs:comment>
+                Refers to a predecessor of an Organizational Unit.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/report-definition -->
+
+    <owl:ObjectProperty rdf:about="&srel;report-definition">
+        <rdfs:comment>Refers to an report-definition to that a resource is related.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/revoked-by -->
+
+    <owl:ObjectProperty rdf:about="&srel;revoked-by">
+        <rdfs:comment>
+                Refers to the entity/resource/person that revoked a resource.
+                Where the resource is a grant, i.e. a entity/resource that 
+                assigns previleges to a entity/resource/person.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/role -->
+
+    <owl:ObjectProperty rdf:about="&srel;role">
+        <rdfs:comment>
+                Refers to the role of a grant.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/scope -->
+
+    <owl:ObjectProperty rdf:about="&srel;scope">
+        <rdfs:comment>Refers to an statistic-scope to that a resource is related.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/structural-relations/toc -->
+
+    <owl:ObjectProperty rdf:about="&srel;toc">
+        <rdfs:comment>
+                Refers to the Item with Toc content-model that is a member of this
+                resource.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/active -->
+
+    <owl:DatatypeProperty rdf:about="&prop;active">
+        <rdfs:comment>Wether a User Account is active or not. To be discussed if this should be restricted to User Account or if it make sense for other resources too.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/checksum -->
+
+    <owl:DatatypeProperty rdf:about="&prop;checksum">
+        <rdfs:comment>The checksum of a resource. For now, just used for  checksum of file inside a Component.
+Shouldn&#39;t the actual checksumbe prefixed by algorithm? Is prop:checksum-algorithm needed, then?</rdfs:comment>
+        <rdfs:seeAlso rdf:resource="&prop;checksum-algorithm"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/checksum-algorithm -->
+
+    <owl:DatatypeProperty rdf:about="&prop;checksum-algorithm">
+        <rdfs:comment>In conjunction with prop:checksum the specification of the used algorithm. To be discussed if it should be forced both or none should appear.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/content-category -->
+
+    <owl:DatatypeProperty rdf:about="&prop;content-category">
+        <rdfs:comment>A - not necessarily unique - identifier for the type of content. To be discussed if replaced with prop:category. Some super-predicate from DC or similar should be found.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/creation-date -->
+
+    <owl:DatatypeProperty rdf:about="&prop;creation-date">
+        <rdfs:comment>Timestamp of the creation of a resource. Equivalent to dc:?.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/description -->
+
+    <owl:DatatypeProperty rdf:about="&prop;description">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/email -->
+
+    <owl:DatatypeProperty rdf:about="&prop;email">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/file-name -->
+
+    <owl:DatatypeProperty rdf:about="&prop;file-name">
+        <rdfs:comment>The name of a file. Probably should be sub-predicate of name. To be discussed if just removed and use prop:name instead.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/file-size -->
+
+    <owl:DatatypeProperty rdf:about="&prop;file-size">
+        <rdfs:comment>Size of a file in bytes.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/grant-remark -->
+
+    <owl:DatatypeProperty rdf:about="&prop;grant-remark">
+        <rdfs:comment>A comment with giving a grant to a user. In other places &#39;comment&#39; is used instead of &#39;remark&#39;; all of these should use a common super-predicate.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/has-children -->
+
+    <owl:DatatypeProperty rdf:about="&prop;has-children">
+        <rdfs:comment>Whether or not a resource has children. Just used for Organizational Unit. To be discussed if reusable for container and how related to member relation.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/latest-release_date -->
+
+    <owl:DatatypeProperty rdf:about="&prop;latest-release_date">
+        <rdfs:comment>TODO every release should have a timestamp which is a version-date!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/latest-release_number -->
+
+    <owl:DatatypeProperty rdf:about="&prop;latest-release_number">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/latest-release_pid -->
+
+    <owl:DatatypeProperty rdf:about="&prop;latest-release_pid">
+        <rdfs:comment>TODO there is a pid, version pid and an extra for release!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/latest-version_date -->
+
+    <owl:DatatypeProperty rdf:about="&prop;latest-version_date">
+        <rdfs:comment>TODO every version has a version date!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/latest-version_number -->
+
+    <owl:DatatypeProperty rdf:about="&prop;latest-version_number">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/lock-date -->
+
+    <owl:DatatypeProperty rdf:about="&prop;lock-date">
+        <rdfs:comment>Timestamp when a locked resource was locked the last time.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/lock-status -->
+
+    <owl:DatatypeProperty rdf:about="&prop;lock-status">
+        <rdfs:comment>If a resource is &#39;locked&#39; or &#39;unlocked&#39;. To be discussed if exchanged by prop:locked of type boolean.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/mime-type -->
+
+    <owl:DatatypeProperty rdf:about="&prop;mime-type">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/name -->
+
+    <owl:DatatypeProperty rdf:about="&prop;name">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/pid -->
+
+    <owl:DatatypeProperty rdf:about="&prop;pid">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/public-status -->
+
+    <owl:DatatypeProperty rdf:about="&prop;public-status">
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/public-status-comment -->
+
+    <owl:DatatypeProperty rdf:about="&prop;public-status-comment">
+        <rdfs:comment>A comment related to a change of status. Note: Changing the status of an eSciDoc Resource does not create a new version. When a resource is modified a version comment may be added.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/revocation-date -->
+
+    <owl:DatatypeProperty rdf:about="&prop;revocation-date">
+        <rdfs:comment>In eSciDoc User Account. Is this related to prop:active?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/revocation-remark -->
+
+    <owl:DatatypeProperty rdf:about="&prop;revocation-remark">
+        <rdfs:comment>In eSciDoc User Account. Is this related to prop:active?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/type -->
+
+    <owl:DatatypeProperty rdf:about="&prop;type">
+        <rdfs:comment>Type of Context. Rethink! Is it related to rdf:type? What for; a selector for apps? It seems a context would be selected by several apps.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/valid-status -->
+
+    <owl:DatatypeProperty rdf:about="&prop;valid-status">
+        <rdfs:comment>In eSciDoc validity of a file. If just &#39;valid&#39; or &#39;invalid&#39; it might be a boolean prop:valid.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/version_comment -->
+
+    <owl:DatatypeProperty rdf:about="&prop;version_comment">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/version_date -->
+
+    <owl:DatatypeProperty rdf:about="&prop;version_date">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;date"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/version_number -->
+
+    <owl:DatatypeProperty rdf:about="&prop;version_number">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/version_pid -->
+
+    <owl:DatatypeProperty rdf:about="&prop;version_pid">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/version_status -->
+
+    <owl:DatatypeProperty rdf:about="&prop;version_status">
+        <rdfs:comment>TODO every release/version has a version number!?</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://escidoc.de/core/01/properties/visibility -->
+
+    <owl:DatatypeProperty rdf:about="&prop;visibility">
+        <rdfs:comment>In eSciDoc visibility of a file. Might be public or private or any kind of restriction. Values should are from a controlled vocabular.</rdfs:comment>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#number -->
+
+    <owl:Class rdf:about="&xsd;number"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
